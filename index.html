@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title></title>
+    <style>
+        #bungkus{
+        margin: 100px;
+        width: 120px;
+        height: 67px;
+        margin-left: 550px;
+        }
+        </style>
+</head>
+<body>
+    <div id="bungkus">
+        <h1>KALKULATOR SEDERHANA.</h1>
+        <hr align="left" width="215px"><br>
+
+            <label for="bilA">Bilangan-A :</label><br>
+            <input type="number" id="bilA" required><br>
+
+            <label for="bilB">Bilangan-B :</label><br>
+            <input type="number" id="bilB" required><br>
+
+            <label for="operator">Operator :</label><br>
+            <button onclick="tambah()">+</button>
+            <button onclick="kurang()">-</button>
+            <button onclick="kali()">*</button>
+            <button onclick="bagi()">/</button><br>
+
+            <label for="hasil">Hasil :</label><br>
+            <input type="text" id="hasil"><br>
+
+        </from>
+    </div>
+    <script type="text/javascript">
+        function tambah(){
+       var nilai1 = document.getElementById("bilA").value;
+       var nilai2 = document.getElementById("bilB").value;
+       var nhasil = "A";
+       if(nilai1=="" || nilai2==""){
+        nhasil = "0";
+       }else{
+            nhasil = parseInt(nilai1)+parseInt(nilai2);
+       }
+       document.getElementById("hasil").value = nhasil;
+    }
+    function kurang(){
+       var nilai1 = document.getElementById("bilA").value;
+       var nilai2 = document.getElementById("bilB").value;
+       var nhasil = "A";
+       if(nilai1=="" || nilai2==""){
+        nhasil = "0";
+       }else{
+            nhasil = parseInt(nilai1)-parseInt(nilai2);
+       }
+       document.getElementById("hasil").value = nhasil;
+    }
+    function kali(){
+       var nilai1 = document.getElementById("bilA").value;
+       var nilai2 = document.getElementById("bilB").value;
+       var nhasil = "A";
+       if(nilai1=="" || nilai2==""){
+        nhasil = "0";
+       }else{
+            nhasil = parseInt(nilai1)*parseInt(nilai2);
+       }
+       document.getElementById("hasil").value = nhasil;
+    }
+    function bagi(){
+       var nilai1 = document.getElementById("bilA").value;
+       var nilai2 = document.getElementById("bilB").value;
+       var nhasil = "A";
+       if(nilai1=="" || nilai2==""){
+        nhasil = "0";
+       }else{
+            nhasil = parseInt(nilai1)/parseInt(nilai2);
+       }
+       document.getElementById("hasil").value = nhasil;
+    }
+    </script>
+</body>
+</html>
